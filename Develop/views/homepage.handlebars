@@ -5,7 +5,7 @@
     <h2>
       <!-- Call helper function with triple brackets to render the emoji span as HTML -->
       {{{get_emoji}}}
-      <a href="/blogPost/{{blogPost.id}}">{{blogPost.name}}</a>
+      <a href="/post/{{blogPost.id}}">{{blogPost.title}}</a>
     </h2>
     <p>
       <span for="img" aria-label="money">💲</span>
@@ -17,7 +17,7 @@
   </div>
   <div class="col-md-7">
     <p>
-      {{blogPost.description}}
+      {{blogPost.blog_text}}
     </p>
   </div>
 </div>

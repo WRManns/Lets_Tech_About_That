@@ -9,18 +9,29 @@
   <p class="font-italic">Created by {{user.name}} on {{format_date date_created}}</p>
 
    {{#if comments.length}}
+   <br>
   <div class="col-md-6 comment-list">
-    <h6 class='d-flex justify-left'>Comments:</h6>
-    <br>
+    <h5 class='d-flex justify-left'>Comments:</h5>
+    
 
-    {{#each comments as |comment|}}
+    {{!-- {{#each comments as |comment|}}
       <div class="row mb-2">
       <div class="col-md-8 comment-box">
         <p>{{comment.comment_text}}</p>
         <p class="font-italic font-weight-light">By: {{comment.user.name}} On: {{format_date comment.date_created}}</p>
       </div>
     </div>
+    {{/each}} --}}
+
+    {{#each comments as |comment|}}
+      <div class="card comment-card" style="width: 22rem;">
+        <div class="card-body">
+          <p>{{comment.comment_text}}</p>
+          <p class="card-subtitle mb-2 font-italic text-muted">By: {{comment.user.name}} On: {{format_date comment.date_created}}<p>
+        </div>
+      </div>
     {{/each}}
+
   </div>
   {{/if}}
 </div>

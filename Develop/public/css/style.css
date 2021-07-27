@@ -30,9 +30,14 @@ a{
   color:rgb(156, 243, 70);
 }
 
-.post-card{
+.card{
   margin: .25rem;
   border-width: 2px;
   border-color: rgb(196, 198, 199);
   background-color: black;
+}
+
+.comment-box{
+  border-width: 2px;
+  border-color:rgb(196, 198, 199);
 }

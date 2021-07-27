@@ -16,5 +16,20 @@
         "comment_text": "Wouldn't it be great if this worked this time? Too bad that it won't. Enjoy your frustration, buddy!",
         "user_id": 2,
         "blog_id": 3
+    },
+
+    {
+        "comment_text": "let's see if multiple will show",
+        "user_id": 2,
+        "blog_id": 3,
+        "date_created": "07/21/2005"
+    },
+
+    {
+        "comment_text": "Wouldn't it be great if this worked this time? Too bad that it won't. Enjoy your frustration, buddy!",
+        "user_id": 1,
+        "blog_id": 2,
+        "date_created": "08/24/2015"
     }
+    
 ]

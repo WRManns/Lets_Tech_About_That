@@ -2,7 +2,7 @@
 <div class='container col-12'>
   <div class='row d-flex justify-content-center'>
 {{#each blogPosts as |blogPost| }}
-<div class="card" style="width: 18rem;">
+<div class="card post-card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">{{blogPost.title}}</h5>
     <h6 class="card-subtitle mb-2 font-italic text-muted">Created by {{blogPost.user.name}} on {{format_date blogPost.date_created}}</h6>

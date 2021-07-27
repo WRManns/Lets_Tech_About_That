@@ -4,7 +4,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    // Get all projects and JOIN with user data
+    // get all blog posts and JOIN with user data
     const blogPostData = await BlogPost.findAll({
       include: [
         {
@@ -33,7 +33,7 @@ router.get('/post/:id', async (req, res) => {
       include: [
         {
           model: Comment,
-          attributes:['comment_text', 'date_created'],
+          attributes:['id', 'comment_text', 'blog_id', 'user_id','date_created'],
           include: {
             model: User,
             attributes: ['name']
@@ -60,7 +60,7 @@ router.get('/post/:id', async (req, res) => {
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
   try {
-    // Find the logged in user based on the session ID
+  
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [{ model: BlogPost }],
@@ -78,7 +78,7 @@ router.get('/profile', withAuth, async (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-  // If the user is already logged in, redirect the request to another route
+  // If the user is already logged in, redirect to the other route
   if (req.session.logged_in) {
     res.redirect('/profile');
     return;

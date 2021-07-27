@@ -1,6 +1,7 @@
 [
     {
         "comment_text": "here is a test of the comment router",
+        "date_created": "3/23/1999",
         "user_id": 2,
         "blog_id": 1
     },

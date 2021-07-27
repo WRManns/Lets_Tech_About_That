@@ -7,7 +7,7 @@ Comment.init({
     id:{
         type: DataTypes.INTEGER,
         allowNull: false, 
-        primateKey: true,
+        primaryKey: true,
         autoIncrement: true,
     },
     
@@ -44,4 +44,4 @@ Comment.init({
         modelName: 'comment',
 });
 
-model.exports = Comment;
+module.exports = Comment;

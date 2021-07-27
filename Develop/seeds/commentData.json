@@ -1,5 +1,19 @@
-[{
-    "comment_text": "here is a test of the comment router",
-    "user_id": 1,
-    "blog_id": 1
-}]
+[
+    {
+        "comment_text": "here is a test of the comment router",
+        "user_id": 2,
+        "blog_id": 1
+    },
+
+    {
+        "comment_text": "derpy derpy DERPY derp!!",
+        "user_id": 3,
+        "blog_id": 1
+    },
+
+    {
+        "comment_text": "Wouldn't it be great if this worked this time? Too bad that it won't. Enjoy your frustration, buddy!",
+        "user_id": 2,
+        "blog_id": 1
+    }
+]

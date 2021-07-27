@@ -8,13 +8,13 @@
 
     {
         "comment_text": "derpy derpy DERPY derp!!",
-        "user_id": 3,
-        "blog_id": 1
+        "user_id": 1,
+        "blog_id": 2
     },
 
     {
         "comment_text": "Wouldn't it be great if this worked this time? Too bad that it won't. Enjoy your frustration, buddy!",
         "user_id": 2,
-        "blog_id": 1
+        "blog_id": 3
     }
 ]

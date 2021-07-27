@@ -6,21 +6,26 @@
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Create a New Blog Post:</h3>
+    <h3>Create a New Post:</h3>
 
-    <form class="form new-blog-form">
-      <div class="form-group">
+    <form class="form new-blog-form mb-4">
+      {{!-- <div class="form-group">
         <label for="blog-title">Blog Title:</label>
         <input class="form-input" type="text" id="blog-title" name="blog-title" />
       </div>
-      
-      <div class="form-group">
-        <label for="blog-post-text">Post:</label>
-        <textarea class="form-input" id="blog-post-text" name="blog-post-text"></textarea>
+       --}}
+      <div class="form-outline mb-4">
+        <label class="form-label" for="blog-title">Title Your Post!</label>
+        <textarea class="form-control form-input" id="blog-title" rows="1" name="blog-title"></textarea>
       </div>
 
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
+      <div class="form-outline mb-4">
+        <label class="form-label" for="blog-post-text">Type Away!</label>
+        <textarea class="form-control form-input" id="blog-post-text" rows="6" name="blog-post-text"></textarea>
+      </div>
+
+      <div class="form-outline">
+        <button type="submit" class="btn btn-primary">Post that Post!</button>
       </div>
     </form>
   </div>
@@ -32,7 +37,7 @@
     {{#each blogPosts as |blogPost|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/post/{{blogPost.id}}">{{blogPost.title}}</a></h4>
+        <h4><a class="font-italic" href="/post/{{blogPost.id}}">{{blogPost.title}}</a></h4>
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{blogPost.id}}">DELETE</button>

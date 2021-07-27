@@ -1,18 +1,14 @@
-<!-- Loop over each object in the projects array -->
+
+<div class='container col-12'>
+  <div class='row d-flex justify-content-center'>
 {{#each blogPosts as |blogPost| }}
-<div class="row mb-4 blogPost">
-  <div class="col-md-5">
-    <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{{get_emoji}}}
-      <a href="/post/{{blogPost.id}}">{{blogPost.title}}</a>
-    </h2>
-    <p class='font-italic font-weight-bold'>Created by {{blogPost.user.name}} on {{format_date blogPost.date_created}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{blogPost.blog_text}}
-    </p>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{blogPost.title}}</h5>
+    <h6 class="card-subtitle mb-2 font-italic text-muted">Created by {{blogPost.user.name}} on {{format_date blogPost.date_created}}</h6>
+    <a href="/post/{{blogPost.id}}" class="btn btn-primary btn-sm">Go To Post</a>
   </div>
 </div>
 {{/each}}
+  </div>
+</div>

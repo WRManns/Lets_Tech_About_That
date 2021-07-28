@@ -6,6 +6,7 @@
     const blog_id = window.location.toString().split("/")[
       window.location.toString().split("/").length - 1]
 
+      console.log(blog_id);
     if (comment_text && blog_id) {
       const response = await fetch(`/api/comments`, {
         method: 'POST',
@@ -17,14 +18,13 @@
   
       if (response.ok) {
         console.log(comment_text);
-        document.location.replace`/post/${id}`;
+        document.location.reload;
       } else {
         alert('Failed to create comment');
       }
     }
   };
-  
-  // $('.new-comment-form').on('submit', newCommentHandler());
+
   document
     .querySelector('.new-comment-form')
     .addEventListener('submit', newCommentHandler);

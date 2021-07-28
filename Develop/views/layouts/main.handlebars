@@ -19,7 +19,8 @@
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile" class= "btn btn-primary btn-sm">profile</a> |
+        <a href="/"  class= "btn btn-primary btn-sm">homepage</a> |
+        <a href="/dashboard" class= "btn btn-primary btn-sm">dashboard</a> |
         <button class="btn btn-primary btn-sm" id="logout">logout</button>
         {{else}}
         <a href="/login" class= "btn btn-primary btn-sm">login</a>

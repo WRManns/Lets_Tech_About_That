@@ -14,12 +14,16 @@ const newPostHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      document.location.replace('/dashboard');
     } else {
       alert('Failed to create post');
     }
   }
 };
+
+// const editPostHandler = async (event) => {
+
+// }
 
 const delButtonHandler = async (event) => {
   if (event.target.hasAttribute('data-id')) {
@@ -30,7 +34,7 @@ const delButtonHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      document.location.replace('/dashboard');
     } else {
       alert('Failed to delete post');
     }

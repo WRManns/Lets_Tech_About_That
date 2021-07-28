@@ -24,7 +24,7 @@
     {{/each}} --}}
 
     {{#each comments as |comment|}}
-      <div class="card comment-card" style="width: 22rem;">
+      <div class="card comment-card w-100">
         <div class="card-body">
           <p>{{comment.comment_text}}</p>
           <p class="card-subtitle mb-2 font-italic text-muted">By: {{comment.user.name}} On: {{format_date comment.date_created}}<p>

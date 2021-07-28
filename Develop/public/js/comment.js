@@ -18,7 +18,7 @@
   
       if (response.ok) {
         console.log(comment_text);
-        document.location.reload;
+        document.location.reload();
       } else {
         alert('Failed to create comment');
       }

@@ -21,10 +21,6 @@ const newPostHandler = async (event) => {
   }
 };
 
-// const editPostHandler = async (event) => {
-
-// }
-
 const delButtonHandler = async (event) => {
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
@@ -46,5 +42,5 @@ document
   .addEventListener('submit', newPostHandler);
 
 document
-  .querySelector('.blogPost-list')
+  .querySelector('#delete-btn')
   .addEventListener('click', delButtonHandler);

@@ -1,0 +1,23 @@
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3>Update Post:</h3>
+
+    <form class="form edit-blog-form mb-4">
+     
+      <div class="form-outline mb-4">
+        <label class="form-label" for="edit-title">Edit Title!</label>
+        <textarea value="{{blogPost.title}}" class="form-control form-input" id="edit-title" rows="1" name="edit-title"></textarea>
+      </div>
+
+      <div class="form-outline mb-4">
+        <label class="form-label" for="edit-post-text">Fix it! Fix it! Fix it!</label>
+        <textarea value="{{blogPost.blog_text}}" class="form-control form-input" id="edit-post-text" rows="6" name="edit-post-text"></textarea>
+      </div>
+
+      <div class="form-outline">
+        <button type="submit" class="btn btn-success">Edit that Post!</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="/js/edit.js"></script>

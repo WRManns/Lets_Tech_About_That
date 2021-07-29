@@ -38,11 +38,17 @@ a{
 }
 
 .comment-box{
-  border-width: 2px;
-  border-color:rgb(196, 198, 199);
+  
 }
 
 #comment-btn{
   border-width: 1px;
   border-color:rgb(196, 198, 199);
+}
+
+.blog_text{
+  padding:1rem;
+  border: 2px solid rgb(196, 198, 199);
+  background-color: black;
+  border-radius: 5px;
 }

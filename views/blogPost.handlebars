@@ -1,12 +1,12 @@
 <div class="text-center">
   <h2>{{title}}</h2>
-  
+  <p class="font-italic">Posted by {{user.name}} on {{format_date date_created}}</p>
   <div class = 'container display-flex'>
     <div class= 'blog-text d-flex'>
-      <p class="text-justify">{{blog_text}}</p>
+      <p class="blog_text text-justify">{{blog_text}}</p>
     </div>
   </div>
-  <p class="font-italic">Created by {{user.name}} on {{format_date date_created}}</p>
+  
 
    {{#if comments.length}}
    <br>

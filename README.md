@@ -12,7 +12,6 @@
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-
 - [Contirbuting](#collaborators)
 - [Deployed App](#deployment)
 - [GitHub](#github)

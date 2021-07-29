@@ -39,7 +39,7 @@
 
     ## Deployed App
 
-    
+    https://peaceful-plateau-46090.herokuapp.com/
 
     ## Collaborators
 

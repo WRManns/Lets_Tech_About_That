@@ -13,16 +13,6 @@
   <div class="col-md-6 comment-list">
     <h5 class='d-flex justify-left'>Comments:</h5>
     
-
-    {{!-- {{#each comments as |comment|}}
-      <div class="row mb-2">
-      <div class="col-md-8 comment-box">
-        <p>{{comment.comment_text}}</p>
-        <p class="font-italic font-weight-light">By: {{comment.user.name}} On: {{format_date comment.date_created}}</p>
-      </div>
-    </div>
-    {{/each}} --}}
-
     {{#each comments as |comment|}}
       <div class="card comment-card w-100">
         <div class="card-body">
@@ -47,7 +37,7 @@
       </div>
 
       <div class="form-group">
-        <button type="submit" id="comment-btn" class="btn btn-primary btn-sm">Sumbit Comment</button>
+        <button type="submit" id="comment-btn" class="btn btn-primary btn-sm">Submit Comment</button>
       </div>
     </form>
   </div>

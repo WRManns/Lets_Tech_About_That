@@ -13,6 +13,7 @@ Comment.init({
     
     comment_text: {
         type: DataTypes.STRING(1000),
+        allowNull: false,
     },
 
     date_created: {

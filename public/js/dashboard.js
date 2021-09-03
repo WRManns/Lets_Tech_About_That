@@ -4,7 +4,8 @@ const newPostHandler = async (event) => {
   const title = document.querySelector('#blog-title').value.trim();
   const blog_text = document.querySelector('#blog-post-text').value.trim();
 
-  if (title && blog_text) {
+
+   if (title && blog_text) {
     const response = await fetch(`/api/posts`, {
       method: 'POST',
       body: JSON.stringify({ title, blog_text }),
@@ -18,7 +19,10 @@ const newPostHandler = async (event) => {
     } else {
       alert('Failed to create post');
     }
+  } else {
+    alert('You cannot have an empty field');
   }
+ 
 };
 
 const delButtonHandler = async (event) => {

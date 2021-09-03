@@ -22,6 +22,8 @@
       } else {
         alert('Failed to create comment');
       }
+    } else {
+      alert('One must enter a comment, if one wishes to leave a comment.')
     }
   };
 

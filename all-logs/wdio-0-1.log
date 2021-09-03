@@ -1,0 +1,72 @@
+2021-09-03T14:12:39.400Z INFO @wdio/local-runner: Run worker command: run
+2021-09-03T14:12:40.233Z INFO webdriver: Initiate new session using the WebDriver protocol
+2021-09-03T14:12:40.238Z INFO webdriver: [POST] http://localhost:9515/session
+2021-09-03T14:12:40.238Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: { browserName: 'chrome', acceptInsecureCerts: true },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: { browserName: 'chrome', acceptInsecureCerts: true }
+}
+2021-09-03T14:12:41.000Z INFO webdriver: COMMAND navigateTo("https://peaceful-plateau-46090.herokuapp.com/login")
+2021-09-03T14:12:41.001Z INFO webdriver: [POST] http://localhost:9515/session/7fa005e3c0be613da3bd0741f9d6ba5b/url
+2021-09-03T14:12:41.001Z INFO webdriver: DATA { url: 'https://peaceful-plateau-46090.herokuapp.com/login' }
+2021-09-03T14:12:41.453Z INFO webdriver: COMMAND findElement("css selector", "#email-login")
+2021-09-03T14:12:41.453Z INFO webdriver: [POST] http://localhost:9515/session/7fa005e3c0be613da3bd0741f9d6ba5b/element
+2021-09-03T14:12:41.453Z INFO webdriver: DATA { using: 'css selector', value: '#email-login' }
+2021-09-03T14:12:41.470Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '1e57c6c4-4857-4a38-82bd-9953d7e7e8a8'
+}
+2021-09-03T14:12:41.478Z INFO webdriver: COMMAND elementClear("1e57c6c4-4857-4a38-82bd-9953d7e7e8a8")
+2021-09-03T14:12:41.479Z INFO webdriver: [POST] http://localhost:9515/session/7fa005e3c0be613da3bd0741f9d6ba5b/element/1e57c6c4-4857-4a38-82bd-9953d7e7e8a8/clear
+2021-09-03T14:12:41.551Z INFO webdriver: COMMAND elementSendKeys("1e57c6c4-4857-4a38-82bd-9953d7e7e8a8", "noshoes4life@gmail.com")
+2021-09-03T14:12:41.551Z INFO webdriver: [POST] http://localhost:9515/session/7fa005e3c0be613da3bd0741f9d6ba5b/element/1e57c6c4-4857-4a38-82bd-9953d7e7e8a8/value
+2021-09-03T14:12:41.551Z INFO webdriver: DATA { text: 'noshoes4life@gmail.com' }
+2021-09-03T14:12:41.708Z INFO webdriver: COMMAND findElement("css selector", "#password-login")
+2021-09-03T14:12:41.708Z INFO webdriver: [POST] http://localhost:9515/session/7fa005e3c0be613da3bd0741f9d6ba5b/element
+2021-09-03T14:12:41.709Z INFO webdriver: DATA { using: 'css selector', value: '#password-login' }
+2021-09-03T14:12:41.728Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '94505463-9623-411e-934f-449e463df418'
+}
+2021-09-03T14:12:41.733Z INFO webdriver: COMMAND elementClear("94505463-9623-411e-934f-449e463df418")
+2021-09-03T14:12:41.733Z INFO webdriver: [POST] http://localhost:9515/session/7fa005e3c0be613da3bd0741f9d6ba5b/element/94505463-9623-411e-934f-449e463df418/clear
+2021-09-03T14:12:41.791Z INFO webdriver: COMMAND elementSendKeys("94505463-9623-411e-934f-449e463df418", "Gloria123")
+2021-09-03T14:12:41.791Z INFO webdriver: [POST] http://localhost:9515/session/7fa005e3c0be613da3bd0741f9d6ba5b/element/94505463-9623-411e-934f-449e463df418/value
+2021-09-03T14:12:41.791Z INFO webdriver: DATA { text: 'Gloria123' }
+2021-09-03T14:12:41.840Z INFO webdriver: COMMAND findElement("css selector", "#login")
+2021-09-03T14:12:41.840Z INFO webdriver: [POST] http://localhost:9515/session/7fa005e3c0be613da3bd0741f9d6ba5b/element
+2021-09-03T14:12:41.840Z INFO webdriver: DATA { using: 'css selector', value: '#login' }
+2021-09-03T14:12:41.853Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f3b98116-8d7c-407c-b17e-d1cd7deff8b4'
+}
+2021-09-03T14:12:41.855Z INFO webdriver: COMMAND elementClick("f3b98116-8d7c-407c-b17e-d1cd7deff8b4")
+2021-09-03T14:12:41.855Z INFO webdriver: [POST] http://localhost:9515/session/7fa005e3c0be613da3bd0741f9d6ba5b/element/f3b98116-8d7c-407c-b17e-d1cd7deff8b4/click
+2021-09-03T14:12:41.913Z INFO webdriver: COMMAND navigateTo("https://peaceful-plateau-46090.herokuapp.com/dashboard")
+2021-09-03T14:12:41.913Z INFO webdriver: [POST] http://localhost:9515/session/7fa005e3c0be613da3bd0741f9d6ba5b/url
+2021-09-03T14:12:41.913Z INFO webdriver: DATA { url: 'https://peaceful-plateau-46090.herokuapp.com/dashboard' }
+2021-09-03T14:12:42.491Z INFO webdriver: COMMAND getLogTypes()
+2021-09-03T14:12:42.491Z INFO webdriver: [GET] http://localhost:9515/session/7fa005e3c0be613da3bd0741f9d6ba5b/se/log/types
+2021-09-03T14:12:42.494Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2021-09-03T14:12:42.495Z INFO webdriver: COMMAND getLogs("driver")
+2021-09-03T14:12:42.495Z INFO webdriver: [POST] http://localhost:9515/session/7fa005e3c0be613da3bd0741f9d6ba5b/se/log
+2021-09-03T14:12:42.495Z INFO webdriver: DATA { type: 'driver' }
+2021-09-03T14:12:42.496Z INFO webdriver: COMMAND getLogs("browser")
+2021-09-03T14:12:42.496Z INFO webdriver: [POST] http://localhost:9515/session/7fa005e3c0be613da3bd0741f9d6ba5b/se/log
+2021-09-03T14:12:42.496Z INFO webdriver: DATA { type: 'browser' }
+2021-09-03T14:12:42.499Z INFO webdriver: RESULT []
+2021-09-03T14:12:42.499Z INFO webdriver: RESULT [
+  {
+    level: 'SEVERE',
+    message: 'https://peaceful-plateau-46090.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)',
+    source: 'network',
+    timestamp: 1630678361567
+  },
+  {
+    level: 'SEVERE',
+    message: "https://peaceful-plateau-46090.herokuapp.com/js/dashboard.js 49:2 Uncaught TypeError: Cannot read property 'addEventListener' of null",
+    source: 'javascript',
+    timestamp: 1630678362475
+  }
+]
+2021-09-03T14:12:42.503Z INFO webdriver: COMMAND deleteSession()
+2021-09-03T14:12:42.504Z INFO webdriver: [DELETE] http://localhost:9515/session/7fa005e3c0be613da3bd0741f9d6ba5b

@@ -1,0 +1,143 @@
+2021-09-03T14:12:40.037Z INFO @wdio/local-runner: Run worker command: run
+2021-09-03T14:12:41.196Z INFO webdriver: Initiate new session using the WebDriver protocol
+2021-09-03T14:12:41.202Z INFO webdriver: [POST] http://localhost:9515/session
+2021-09-03T14:12:41.203Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: { browserName: 'chrome', acceptInsecureCerts: true },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: { browserName: 'chrome', acceptInsecureCerts: true }
+}
+2021-09-03T14:12:42.070Z INFO webdriver: COMMAND navigateTo("https://peaceful-plateau-46090.herokuapp.com/login")
+2021-09-03T14:12:42.070Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/url
+2021-09-03T14:12:42.070Z INFO webdriver: DATA { url: 'https://peaceful-plateau-46090.herokuapp.com/login' }
+2021-09-03T14:12:42.915Z INFO webdriver: COMMAND findElement("css selector", "#email-login")
+2021-09-03T14:12:42.915Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element
+2021-09-03T14:12:42.915Z INFO webdriver: DATA { using: 'css selector', value: '#email-login' }
+2021-09-03T14:12:42.947Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '3a97d68b-adfa-4f79-84fb-925965aefb43'
+}
+2021-09-03T14:12:42.955Z INFO webdriver: COMMAND elementClear("3a97d68b-adfa-4f79-84fb-925965aefb43")
+2021-09-03T14:12:42.955Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element/3a97d68b-adfa-4f79-84fb-925965aefb43/clear
+2021-09-03T14:12:43.019Z INFO webdriver: COMMAND elementSendKeys("3a97d68b-adfa-4f79-84fb-925965aefb43", "noshoes4life@gmail.com")
+2021-09-03T14:12:43.019Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element/3a97d68b-adfa-4f79-84fb-925965aefb43/value
+2021-09-03T14:12:43.019Z INFO webdriver: DATA { text: 'noshoes4life@gmail.com' }
+2021-09-03T14:12:43.164Z INFO webdriver: COMMAND findElement("css selector", "#password-login")
+2021-09-03T14:12:43.165Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element
+2021-09-03T14:12:43.165Z INFO webdriver: DATA { using: 'css selector', value: '#password-login' }
+2021-09-03T14:12:43.186Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'ceb8e18a-95e3-4e26-b88a-829b3d0961d8'
+}
+2021-09-03T14:12:43.190Z INFO webdriver: COMMAND elementClear("ceb8e18a-95e3-4e26-b88a-829b3d0961d8")
+2021-09-03T14:12:43.190Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element/ceb8e18a-95e3-4e26-b88a-829b3d0961d8/clear
+2021-09-03T14:12:43.302Z INFO webdriver: COMMAND elementSendKeys("ceb8e18a-95e3-4e26-b88a-829b3d0961d8", "Gloria123")
+2021-09-03T14:12:43.303Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element/ceb8e18a-95e3-4e26-b88a-829b3d0961d8/value
+2021-09-03T14:12:43.303Z INFO webdriver: DATA { text: 'Gloria123' }
+2021-09-03T14:12:43.367Z INFO webdriver: COMMAND findElement("css selector", "#login")
+2021-09-03T14:12:43.368Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element
+2021-09-03T14:12:43.368Z INFO webdriver: DATA { using: 'css selector', value: '#login' }
+2021-09-03T14:12:43.380Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '1ed20f25-f9c4-4932-a849-1e9d16606f0a'
+}
+2021-09-03T14:12:43.383Z INFO webdriver: COMMAND elementClick("1ed20f25-f9c4-4932-a849-1e9d16606f0a")
+2021-09-03T14:12:43.383Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element/1ed20f25-f9c4-4932-a849-1e9d16606f0a/click
+2021-09-03T14:12:43.421Z INFO webdriver: COMMAND findElement("css selector", "#blog-title")
+2021-09-03T14:12:43.421Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element
+2021-09-03T14:12:43.421Z INFO webdriver: DATA { using: 'css selector', value: '#blog-title' }
+2021-09-03T14:12:43.434Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"#blog-title"}\n' +
+    '  (Session info: chrome=92.0.4515.159)',
+  stacktrace: 'Backtrace:\n' +
+    '\tOrdinal0 [0x00FA2A33+2501171]\n' +
+    '\tOrdinal0 [0x00F3D1C1+2085313]\n' +
+    '\tOrdinal0 [0x00E41FA8+1056680]\n' +
+    '\tOrdinal0 [0x00E6C78B+1230731]\n' +
+    '\tOrdinal0 [0x00E964A2+1402018]\n' +
+    '\tOrdinal0 [0x00E8568A+1332874]\n' +
+    '\tOrdinal0 [0x00E948BC+1394876]\n' +
+    '\tOrdinal0 [0x00E8551B+1332507]\n' +
+    '\tOrdinal0 [0x00E61D74+1187188]\n' +
+    '\tOrdinal0 [0x00E62BD9+1190873]\n' +
+    '\tGetHandleVerifier [0x0111EFE6+1504438]\n' +
+    '\tGetHandleVerifier [0x011CDDA5+2220661]\n' +
+    '\tGetHandleVerifier [0x01025589+481881]\n' +
+    '\tGetHandleVerifier [0x01024639+477961]\n' +
+    '\tOrdinal0 [0x00F428BD+2107581]\n' +
+    '\tOrdinal0 [0x00F46728+2123560]\n' +
+    '\tOrdinal0 [0x00F46862+2123874]\n' +
+    '\tOrdinal0 [0x00F4FA81+2161281]\n' +
+    '\tBaseThreadInitThunk [0x76CBFA29+25]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x778E7A7E+286]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x778E7A4E+238]\n'
+}
+2021-09-03T14:12:43.437Z INFO webdriver: COMMAND findElements("css selector", "#blog-title")
+2021-09-03T14:12:43.437Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/elements
+2021-09-03T14:12:43.437Z INFO webdriver: DATA { using: 'css selector', value: '#blog-title' }
+2021-09-03T14:12:43.449Z INFO webdriver: RESULT []
+2021-09-03T14:12:43.950Z INFO webdriver: COMMAND findElements("css selector", "#blog-title")
+2021-09-03T14:12:43.951Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/elements
+2021-09-03T14:12:43.951Z INFO webdriver: DATA { using: 'css selector', value: '#blog-title' }
+2021-09-03T14:12:43.960Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'a3142e2c-c674-4771-b120-7be6d3a183e3'
+  }
+]
+2021-09-03T14:12:43.965Z INFO webdriver: COMMAND findElement("css selector", "#blog-title")
+2021-09-03T14:12:43.965Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element
+2021-09-03T14:12:43.965Z INFO webdriver: DATA { using: 'css selector', value: '#blog-title' }
+2021-09-03T14:12:43.971Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'a3142e2c-c674-4771-b120-7be6d3a183e3'
+}
+2021-09-03T14:12:43.973Z INFO webdriver: COMMAND elementClear("a3142e2c-c674-4771-b120-7be6d3a183e3")
+2021-09-03T14:12:43.973Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element/a3142e2c-c674-4771-b120-7be6d3a183e3/clear
+2021-09-03T14:12:44.016Z INFO webdriver: COMMAND elementSendKeys("a3142e2c-c674-4771-b120-7be6d3a183e3", ""My Second Blog"")
+2021-09-03T14:12:44.016Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element/a3142e2c-c674-4771-b120-7be6d3a183e3/value
+2021-09-03T14:12:44.016Z INFO webdriver: DATA { text: '"My Second Blog"' }
+2021-09-03T14:12:44.075Z INFO webdriver: COMMAND findElement("css selector", "#blog-post-text")
+2021-09-03T14:12:44.076Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element
+2021-09-03T14:12:44.076Z INFO webdriver: DATA { using: 'css selector', value: '#blog-post-text' }
+2021-09-03T14:12:44.086Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '4d99b12a-a121-4c18-b030-29d0c082dc33'
+}
+2021-09-03T14:12:44.088Z INFO webdriver: COMMAND elementClear("4d99b12a-a121-4c18-b030-29d0c082dc33")
+2021-09-03T14:12:44.088Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element/4d99b12a-a121-4c18-b030-29d0c082dc33/clear
+2021-09-03T14:12:44.111Z INFO webdriver: COMMAND elementSendKeys("4d99b12a-a121-4c18-b030-29d0c082dc33", ""It's been a really long night"")
+2021-09-03T14:12:44.111Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element/4d99b12a-a121-4c18-b030-29d0c082dc33/value
+2021-09-03T14:12:44.111Z INFO webdriver: DATA { text: `"It's been a really long night"` }
+2021-09-03T14:12:44.154Z INFO webdriver: COMMAND findElement("css selector", "#postBtn")
+2021-09-03T14:12:44.154Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element
+2021-09-03T14:12:44.154Z INFO webdriver: DATA { using: 'css selector', value: '#postBtn' }
+2021-09-03T14:12:44.165Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'eca98764-2900-4ef8-b190-219489d5352f'
+}
+2021-09-03T14:12:44.167Z INFO webdriver: COMMAND elementClick("eca98764-2900-4ef8-b190-219489d5352f")
+2021-09-03T14:12:44.167Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element/eca98764-2900-4ef8-b190-219489d5352f/click
+2021-09-03T14:12:44.195Z INFO webdriver: COMMAND findElement("css selector", "#delete-btn")
+2021-09-03T14:12:44.196Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element
+2021-09-03T14:12:44.196Z INFO webdriver: DATA { using: 'css selector', value: '#delete-btn' }
+2021-09-03T14:12:44.206Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '2dcea1a1-fca9-45ff-b19f-7f79a5b51702'
+}
+2021-09-03T14:12:44.210Z INFO webdriver: COMMAND elementClick("2dcea1a1-fca9-45ff-b19f-7f79a5b51702")
+2021-09-03T14:12:44.210Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/element/2dcea1a1-fca9-45ff-b19f-7f79a5b51702/click
+2021-09-03T14:12:44.238Z INFO webdriver: COMMAND getLogTypes()
+2021-09-03T14:12:44.238Z INFO webdriver: [GET] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/se/log/types
+2021-09-03T14:12:44.240Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2021-09-03T14:12:44.240Z INFO webdriver: COMMAND getLogs("driver")
+2021-09-03T14:12:44.240Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/se/log
+2021-09-03T14:12:44.240Z INFO webdriver: DATA { type: 'driver' }
+2021-09-03T14:12:44.240Z INFO webdriver: COMMAND getLogs("browser")
+2021-09-03T14:12:44.240Z INFO webdriver: [POST] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2/se/log
+2021-09-03T14:12:44.240Z INFO webdriver: DATA { type: 'browser' }
+2021-09-03T14:12:44.245Z INFO webdriver: RESULT []
+2021-09-03T14:12:44.246Z INFO webdriver: RESULT [
+  {
+    level: 'SEVERE',
+    message: 'https://peaceful-plateau-46090.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)',
+    source: 'network',
+    timestamp: 1630678362942
+  }
+]
+2021-09-03T14:12:44.248Z INFO webdriver: COMMAND deleteSession()
+2021-09-03T14:12:44.248Z INFO webdriver: [DELETE] http://localhost:9515/session/5205c9ca21a9e4334431a3914e551db2

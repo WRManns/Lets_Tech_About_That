@@ -1,0 +1,2 @@
+{"level":"SEVERE","message":"https://peaceful-plateau-46090.herokuapp.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)","source":"network","timestamp":1630678361567}
+{"level":"SEVERE","message":"https://peaceful-plateau-46090.herokuapp.com/js/dashboard.js 49:2 Uncaught TypeError: Cannot read property 'addEventListener' of null","source":"javascript","timestamp":1630678362475}

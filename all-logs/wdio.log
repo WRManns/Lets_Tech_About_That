@@ -1,0 +1,16 @@
+2021-09-03T14:12:30.168Z INFO @wdio/cli:launcher: Run onPrepare hook
+2021-09-03T14:12:30.171Z INFO chromedriver: Start Chromedriver (C:\Users\wrman\Desktop\BootCamp\Homework\Lets_Tech_About_That\node_modules\chromedriver\lib\chromedriver\chromedriver.exe) with args --silent --port=9515 --url-base=/
+2021-09-03T14:12:38.041Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2021-09-03T14:12:38.041Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2021-09-03T14:12:38.041Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2021-09-03T14:12:38.041Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2021-09-03T14:12:38.041Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2021-09-03T14:12:38.042Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,wdio.conf.js
+2021-09-03T14:12:38.457Z INFO @wdio/local-runner: Start worker 0-1 with arg: run,wdio.conf.js
+2021-09-03T14:12:38.816Z INFO @wdio/local-runner: Start worker 0-2 with arg: run,wdio.conf.js
+2021-09-03T14:12:39.230Z INFO @wdio/local-runner: Start worker 0-3 with arg: run,wdio.conf.js
+2021-09-03T14:12:39.660Z INFO @wdio/local-runner: Start worker 0-4 with arg: run,wdio.conf.js
+2021-09-03T14:12:46.330Z INFO @wdio/cli:launcher: Run onComplete hook
+2021-09-03T14:12:46.331Z INFO @wdio/selenium-standalone-service: shutting down all browsers
+2021-09-03T14:12:46.368Z INFO @wdio/local-runner: Shutting down spawned worker
+2021-09-03T14:12:46.624Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully

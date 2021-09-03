@@ -25,6 +25,8 @@
     }
   };
 
+  //comment to test the purging of the db
+
   document
     .querySelector('.new-comment-form')
     .addEventListener('submit', newCommentHandler);
